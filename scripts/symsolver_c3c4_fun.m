@@ -135,7 +135,7 @@ ss = workspace2struct_fun();
 
 end
 
-%% Solutions for NADP-ME-C4
+%% Solutions for NADP-ME C4 net CO2 assimilation in bundle sheath (As) 
 
 if strcmp(pathway_opt,'NADP-ME-C4') == 1
 
@@ -233,7 +233,7 @@ clear eq1 eq2 eq3 eq4 eq5 eq6 eq7 eq8 eq9 eq10...
       eq11 eq12 eq13 eq14 eq15 eq16 eq17;
 % @(C_m,Kc,Ko,Kp,O_m,P,Rd_s,S,Vcmax_s,Vpmax_m,gbs,gbso)
 
-%% Export NADP-ME-C4 functions:
+%% Export NADP-ME C4 functions:
 c4_solve_jj = matlabFunction(real(c4_soln_jj(2))); 
 c4_solve_jc = matlabFunction(simplify(c4_soln_jc(1)));
 c4_solve_cj = matlabFunction(real(c4_soln_cj(3))); 

@@ -13,7 +13,7 @@
 %   MATLAB R2020b
 %
 %  Last revised: 
-%   2021-10-18
+%   2021-10-23
 %
 %% Set up environment
 
@@ -82,7 +82,7 @@ if strcmp(pathway_opt,'Type-I-C3-C4') == 1
 end
      
 if strcmp(pathway_opt,'NADP-ME-C4') == 1
-    % Case 3: NADP-ME-C4 w/ "neutral" shuttle  
+    % Case 3: NADP-ME C4  
     ss = symsolver_c3c4_fun(pathway_opt);
     v.CB6F = 175./v.kq.*1e-06; 
     v.RUB = 30./v.kc.*1e-06;
@@ -96,7 +96,7 @@ end
 
 %% Run simulation and visualize results
 
-% % Update objective function (optional)
+% Store model configuration in input structure
 v.Model_id = {'model_fun_c3c4'};
 v.pathway_opt = pathway_opt;
 
