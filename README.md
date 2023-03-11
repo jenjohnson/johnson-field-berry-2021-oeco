@@ -34,3 +34,61 @@ For the analysis in Figure 6, the forward model in `scripts/model_fun_c3c4.m` ne
 fit to the physiological measurements with an optimization routine. For the analysis in 
 Figure 7, the environmental measurements can simply be substituted into the example run 
 files to recreate the simulations. 
+
+### Directory structure:
+```
+├── LICENSE
+├── README.md
+├── inputs
+│   ├── Figure-6.csv
+│   └── Figure-7.csv
+├── outputs
+│   ├── Example1-Light-C3
+│   │   ├── Example1-Light-C3-figure.png
+│   │   ├── Example1-Light-C3-modelinputs.mat
+│   │   └── Example1-Light-C3-modeloutputs.mat
+│   ├── Example1-Light-NADP-ME-C4
+│   │   ├── Example1-Light-NADP-ME-C4-figure.png
+│   │   ├── Example1-Light-NADP-ME-C4-modelinputs.mat
+│   │   └── Example1-Light-NADP-ME-C4-modeloutputs.mat
+│   ├── Example1-Light-Type-I-C3-C4
+│   │   ├── Example1-Light-Type-I-C3-C4-figure.png
+│   │   ├── Example1-Light-Type-I-C3-C4-modelinputs.mat
+│   │   └── Example1-Light-Type-I-C3-C4-modeloutputs.mat
+│   ├── Example2-CO2-C3
+│   │   ├── Example2-CO2-C3-figure.png
+│   │   ├── Example2-CO2-C3-modelinputs.mat
+│   │   └── Example2-CO2-C3-modeloutputs.mat
+│   ├── Example2-CO2-NADP-ME-C4
+│   │   ├── Example2-CO2-NADP-ME-C4-figure.png
+│   │   ├── Example2-CO2-NADP-ME-C4-modelinputs.mat
+│   │   └── Example2-CO2-NADP-ME-C4-modeloutputs.mat
+│   ├── Example2-CO2-Type-I-C3-C4
+│   │   ├── Example2-CO2-Type-I-C3-C4-figure.png
+│   │   ├── Example2-CO2-Type-I-C3-C4-modelinputs.mat
+│   │   └── Example2-CO2-Type-I-C3-C4-modeloutputs.mat
+│   ├── Example3-Temperature-C3
+│   │   ├── Example3-Temperature-C3-figure.png
+│   │   ├── Example3-Temperature-C3-modelinputs.mat
+│   │   └── Example3-Temperature-C3-modeloutputs.mat
+│   ├── Example3-Temperature-NADP-ME-C4
+│   │   ├── Example3-Temperature-NADP-ME-C4-figure.png
+│   │   ├── Example3-Temperature-NADP-ME-C4-modelinputs.mat
+│   │   └── Example3-Temperature-NADP-ME-C4-modeloutputs.mat
+│   └── Example3-Temperature-Type-I-C3-C4
+│       ├── Example3-Temperature-Type-I-C3-C4-figure.png
+│       ├── Example3-Temperature-Type-I-C3-C4-modelinputs.mat
+│       └── Example3-Temperature-Type-I-C3-C4-modeloutputs.mat
+├── run_forward_example1.m
+├── run_forward_example2.m
+├── run_forward_example3.m
+└── scripts
+    ├── configure_fun.m
+    ├── loadvars_fun.m
+    ├── model_fun_c3c4.m
+    ├── plotter_forward_fun_c3c4.m
+    ├── symsolver_c3c4_fun.m
+    └── workspace2struct_fun.m
+
+13 directories, 40 files
+```
