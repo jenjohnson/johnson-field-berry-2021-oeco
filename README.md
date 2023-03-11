@@ -29,7 +29,7 @@ dioxide, and temperature, respectively. Other environmental variables are held c
 4. Each simulation can be customized by setting the `pathway_opt` variable to either
  `C3`, `Type-I-C3-C4`, or `NADP-ME-C4`. 
 
-5. The subdirectory `data` contains two files with the input data used in Figures 6 and 7. 
+5. The subdirectory `inputs` contains two files with the input data used in Figures 6 and 7. 
 For the analysis in Figure 6, the forward model in `scripts/model_fun_c3c4.m` needs to be 
 fit to the physiological measurements with an optimization routine. For the analysis in 
 Figure 7, the environmental measurements can simply be substituted into the example run 
